@@ -1,0 +1,103 @@
+body {
+	font-size: 1em;
+	font-family:sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+div.voucher {
+	display: inline-block;
+	border: 1px dashed #000;
+	width: 166px;
+	height: 100px;
+	float: left;
+}
+
+div.voucher div.voucher-outerWrapper {
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+
+div.voucher div.voucher-innerWrapper {
+	display: table-cell;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	vertical-align: middle;
+	overflow: hidden;
+}
+
+div.limit {
+	font-size: 0.5em;
+}
+
+div.limit div {
+	float: left;
+	width: 100%;
+}
+
+div.limit.downrate_enabled .downrate_enabled,
+div.limit.uprate_enabled .uprate_enabled,
+div.limit.quota_enabled .quota_enabled {
+	display: inline-block;
+}
+
+div.limit.downrate_enabled .downrate_disabled,
+div.limit.uprate_enabled .uprate_disabled,
+div.limit.quota_enabled .quota_disabled {
+	display: none;
+}
+
+div.limit.downrate_disabled .downrate_enabled,
+div.limit.uprate_disabled .uprate_enabled,
+div.limit.quota_disabled .quota_enabled {
+	display: none;
+}
+
+div.limit.downrate_disabled .downrate_disabled,
+div.limit.uprate_disabled .uprate_disabled,
+div.limit.quota_disabled .quota_disabled {
+	display: inline-block;
+}
+
+div.limit div div.heading {
+	display: inline-block;
+	width: 83px;
+	text-align: right;
+}
+div.limit div div.value {
+	display: inline-block;
+	width: 78px;
+	text-align: left;
+	margin-left: 5px;
+	white-space: nowrap;
+}
+
+div.valid {
+	text-decoration:underline;
+	color: #666666;
+}
+
+div.valid div {
+	display: inline-block;
+}
+
+div.valid.days_enabled .days_enabled,
+div.valid.hours_enabled .hours_enabled,
+div.valid.minutes_enabled .minutes_enabled {
+	display: inline-block;
+}
+
+div.valid.days_disabled .days_enabled,
+div.valid.hours_disabled .hours_enabled,
+div.valid.minutes_disabled .minutes_enabled {
+	display: none;
+}
+
+div.code {
+	font-weight:bold;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size:larger;
+}

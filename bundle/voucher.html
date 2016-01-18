@@ -1,0 +1,30 @@
+<div class="voucher">
+	<div class="voucher-outerWrapper">
+		<div class="voucher-innerWrapper">
+			<div class="valid <unifi var="hasDays" /> <unifi var="hasHours" /> <unifi var="hasMinutes" />">
+				<div class="valid">Valid for </div>
+				<div class="valid days_enabled"> <unifi var="days" /> Days</div>
+				<div class="valid hours_enabled"> <unifi var="hours" /> Hours</div>
+				<div class="valid minutes_enabled"> <unifi var="minutes" /> Minutes</div>
+			</div>
+			<div class="code"><unifi var="code" /></div>
+			<div class="limit <unifi var="hasDown" /> <unifi var="hasUp" /> <unifi var="hasData" />">
+				<div>
+					<div class="heading">Download Speed:</div>
+					<div class="value downrate_enabled"> <unifi var="down" /> Kbps</div>
+					<div class="value downrate_disabled"> Unlimited</div>
+				</div>
+				<div>
+					<div class="heading">Upload Speed:</div>
+					<div class="value uprate_enabled"> <unifi var="up" /> Kbps</div>
+					<div class="value uprate_disabled"> Unlimited</div>
+				</div>
+				<div>
+					<div class="heading">Byte Quota:</div>
+					<div class="value quota_enabled"> <unifi var="data" /> MBytes</div>
+					<div class="value quota_disabled"> Unlimited</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
